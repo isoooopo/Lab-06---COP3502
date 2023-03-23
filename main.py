@@ -1,4 +1,9 @@
-
+def decode(encoded):
+    decoded = ''
+    for c in encoded:
+        decoded += str((int(c)+7) % 10)
+    print(f'The encoded password is {encoded}, and the original password is {decoded}.')
+    print()
 
 encoded_password = ""
 
@@ -34,14 +39,7 @@ if __name__ == '__main__':
             print("Your password has been encoded and stored!")
             print("")
         elif option == 2:
-            #Decoder
-            
-
+            decode(password)
 
         elif option == 3:
             break
-
-
-
-
-
