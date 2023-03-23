@@ -1,3 +1,5 @@
+#Aran Gain
+
 def decode(encoded):
     decoded = ''
     for c in encoded:
